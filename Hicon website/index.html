@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hicon</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+
+
+   <div class="header">
+   <div class="container">
+   <div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="images/Hicon.png" width="100px"></a>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>	
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">			
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<h1>In-house Manufacturing<br>& Servicing</h1>
+			
+			<p>Save you time and money in the long run. Be in<br>the control of process from start to finish</p>
+			<a href="products.html" class="btn">Explore Now &#8594; </a>
+		</div>
+		<div class="col-2">
+			<img src="images/images.png">
+		
+		</div>
+	</div>
+	
+   </div>
+   </div>
+   
+	<div class="small-container">
+	<br>
+         <h2 class="title">Featured Products</h2>
+		 <div class="row">
+		    <div class="col-4">
+			    <a href="Sprayfoam.html"><img src="images/category-1.jpg"></a>
+			    <h4>Spray Foam</h4>
+			</div>
+ 
+            <div class="col-4">
+			    <a href="Cleanrooms.html"><img src="images/category-2.jpg"></a>
+			    <h4>Cleanrooms</h4>
+			</div>
+ 
+         	<div class="col-4">
+			    <a href="PUFPanels.html"><img src="images/category-3.jpg"></a>
+			    <h4>PUF Panels</h4>
+			</div>
+ 
+         	<div class="col-4">
+			    <a href="Coldrooms.html"><img src="images/category-4.jpg"></a>
+			    <h4>Cold rooms</h4>
+			</div>
+ 
+         	<div class="col-4">
+			    <a href="PUFpipesection.html"><img src="images/category-5.jpg"></a>
+			    <h4>PUF pipe section</h4>
+			</div>
+ 
+         	<div class="col-4">
+			    <a href="ReeferTrucks.html"><img src="images/category-6.jpg"></a>
+			    <h4>Reefer Trucks</h4>
+			</div>
+ 
+         </div>
+
+	</div>
+	
+	
+	<!-------------footer---->
+	
+	<div class="footer">
+	   <div class="container">
+	      <div class="row">
+		         <div class="footer-col-2">
+			     <img src="images/logo-lite.png">
+				 
+				 <p>Copyright © 2021 HICON</p>
+			   </div>
+		      <div class="footer-col-1">
+			     <h3>Download the App</h3>
+				 <p>Download App for Android and ios mobile phone.</p>
+				 <div class="app-logo">
+				    <img src="images/play-store.png">
+					<img src="images/app-store.png">
+				 
+				 </div>
+			   </div>
+			   
+			   <div class="footer-col-3">
+			     <h3>Useful Links</h3>
+				 <ul>
+				     <li>Coupons</li>
+					 <li>Return Policy</li>
+					 <li>Learning center</li>
+				</ul>
+			   </div>
+			   <div class="footer-col-4">
+			     <h3>Follow Us</h3>
+				 <ul>
+				     <li>Twitter</li>
+					 <li>Facebook</li>
+					 <li>Instagram</li>
+				</ul>
+			   </div>
+		  </div>
+		</div>
+	</div>	
+	
+	<!-----------------js---->
+	<script>
+	 var MenuItems = document.getElementById("MenuItems");
+	 
+	 MenuItems.style.maxHeight = "0px" ;
+	 
+	 function menutoggle()
+	 {
+	   if(MenuItems.style.maxHeight == "0px")
+	   {
+	      MenuItems.style.maxHeight = "200px";
+	    }
+		else
+		{
+		   MenuItems.style.maxHeight = "0px";
+		}
+	  }
+	  </script>
+		  
+</body>
+</html>

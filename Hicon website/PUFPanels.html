@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hicon - PUF Panels</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="header">
+   <div class="container">
+   <div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="images/Hicon.png" width="100px"></a>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="Cart.html><img src="images/cart.png" width="30px" height="30px"></a>	
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">			
+	</div>
+	</div>
+	
+   </div>
+   
+   	<!-------------------------product details---------->
+	<div class="small-container single-product" >
+	       <div class="row">
+		       <div class="col-2">
+			         <img src="images/puf-1.jpg" width="100%" id="productImg">
+					 <div class="small-img-row">
+					    <div class="small-img-col">
+						   <img src="images/puf-1.jpg" width="100%" class="small-img">
+						</div>
+					    <div class="small-img-col">
+						   <img src="images/category-3.jpg" width="100%" class="small-img">
+						</div>
+					    <div class="small-img-col">
+						   <img src="images/puf-3.jpg" width="100%" class="small-img">
+						</div>
+					    <div class="small-img-col">
+						   <img src="images/puf-2.jpg" width="100%" class="small-img">
+						</div>
+					 
+					 
+					 </div>
+					 
+					 
+					 
+					 
+			  </div>
+			   <div class="col-2">
+			         <p>Home / PUF Panels</p>
+					 <h1>PUF Panels</h1>
+					 <h4>₹175 / Square feet</h4>
+					 <input type="number" value="1">
+					 <a href="" class="btn">Add to Cart</a>
+					 <h3>Product Details</h3>
+					 <br>
+					 <p>These are prefabricated sandwich panels containing tough polyurethane foam that is known for its superior strength and insulative properties. The panel surface is typically made of steel, aluminium, cement, MDF boards or a combination of these. It combines low thermal conductivity ratio and good fire resistance together with available thicknesses up to 200mm.</p>
+			   </div>
+		   
+		   </div>
+	</div>
+	
+	<h2 class="title">Other Products</h2>
+	<div class="small-container">
+		
+         <div class="row">
+		 
+		    <div class="col-4">
+			    <a href="Sprayfoam.html"><img src="images/category-1.jpg"></a>
+			    <h4>Spray Foam</h4>
+				<p>₹175 / Kg</p>
+			</div>
+			
+		    <div class="col-4">
+			    <a href="Cleanrooms.html"><img src="images/category-2.jpg"></a>
+			    <h4>Cleanrooms</h4>
+				<p>₹75 / Square feet</p>
+			</div>
+ 
+         	<div class="col-4">
+			    <a href="Coldrooms.html"><img src="images/category-4.jpg"></a>
+			    <h4>Cold rooms</h4>
+				<p>₹2L / Unit</p>
+			</div>
+ 
+         	<div class="col-4">
+			    <a href="PUFpipesection.html"><img src="images/category-5.jpg"></a>
+			    <h4>PUF pipe section</h4>
+				<p>₹90 / Square feet</p>
+			</div>
+ 
+         	<div class="col-4">
+			    <a href="ReeferTrucks.html"><img src="images/category-6.jpg"></a>
+			    <h4>Reefer Trucks</h4>
+				<p>₹8.5L / Truck</p>
+			</div>
+ 
+         </div>
+    
+	</div>
+	
+	
+	<!-------------footer---->
+	
+	<div class="footer">
+	   <div class="container">
+	      <div class="row">
+		         <div class="footer-col-2">
+			     <img src="images/logo-lite.png">
+				 
+				 <p>Copyright © 2021 HICON</p>
+			   </div>
+		      <div class="footer-col-1">
+			     <h3>Download the App</h3>
+				 <p>Download App for Android and ios mobile phone.</p>
+				 <div class="app-logo">
+				    <img src="images/play-store.png">
+					<img src="images/app-store.png">
+				 
+				 </div>
+			   </div>
+			   
+			   <div class="footer-col-3">
+			     <h3>Useful Links</h3>
+				 <ul>
+				     <li>Coupons</li>
+					 <li>Return Policy</li>
+					 <li>Learning center</li>
+				</ul>
+			   </div>
+			   <div class="footer-col-4">
+			     <h3>Follow Us</h3>
+				 <ul>
+				     <li>Twitter</li>
+					 <li>Facebook</li>
+					 <li>Instagram</li>
+				</ul>
+			   </div>
+		  </div>
+		</div>
+	</div>	
+	
+	<!-----------------js---->
+	<script>
+	 var MenuItems = document.getElementById("MenuItems");
+	 
+	 MenuItems.style.maxHeight = "0px" ;
+	 
+	 function menutoggle()
+	 {
+	   if(MenuItems.style.maxHeight == "0px")
+	   {
+	      MenuItems.style.maxHeight = "200px";
+	    }
+		else
+		{
+		   MenuItems.style.maxHeight = "0px";
+		}
+	  }
+	  </script>
+		 
+
+
+<!----------product gallery js--->
+<script>
+    var ProductImg = document.getElementById("productImg");
+	var SmallImg = document.getElementsByClassName("small-img");
+	
+	SmallImg[0].onclick = function()
+	{
+	ProductImg.src = SmallImg[0].src;
+	}
+    SmallImg[1].onclick = function()
+	{
+	ProductImg.src = SmallImg[1].src;
+	}
+    SmallImg[2].onclick = function()
+	{
+	ProductImg.src = SmallImg[2].src;
+	}
+    SmallImg[3].onclick = function()
+	{
+	ProductImg.src = SmallImg[3].src;
+	}
+
+</script>		 
+</body>
+</html>
