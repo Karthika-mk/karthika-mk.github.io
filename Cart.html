@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hicon - Cart</title>
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="bill.js" async></script>
 </head>
 <body>
 
@@ -15,7 +16,7 @@
    <div class="container">
    <div class="navbar">
 		<div class="logo">
-			<a href="index.html"><img src="images/Hicon.png" width="100px"></a>
+			<a href="index.html"><img src="Hicon.png" width="100px"></a>
 		</div>
 		<nav>
 			<ul id="MenuItems">
@@ -26,14 +27,13 @@
 				<li><a href="Account.html">Account</a></li>
 			</ul>
 		</nav>
-		<a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>	
-		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">			
+		<a href="Cart.html"><img src="cart.png" width="30px" height="30px"></a>	
+		<img src="menu.png" class="menu-icon" onclick="menutoggle()">			
 	</div>
 	</div>
 	
    </div>
    
-   	<!--------------cart details--->
 	<div class="small-container cart-page">
 	   <table>
 	   <tr>
@@ -44,7 +44,7 @@
 	   <tr>
 	      <td>
 		    <div class="cart-info">
-			  <img src="images/category-1.jpg">
+			  <img src="category-1.jpg">
 			  <div>
 			    <p>Spray foam</p>
 				<small>Price: ₹175 / Kg</small>
@@ -53,13 +53,14 @@
 			  </div>
 			</div>
 		  </td>
-		  <td><input type="number" value="1"></td>
+		  <td><input type="number" value="1" min="0"></td>
 		  <td>₹175</td>
+		  </div>
 	   </tr>
 	   <tr>
 	      <td>
 		    <div class="cart-info">
-			  <img src="images/category-2.jpg">
+			  <img src="category-2.jpg">
 			  <div>
 			    <p>Cleanrooms</p>
 				<small>Price: ₹75 / Square feet</small>
@@ -68,13 +69,13 @@
 			  </div>
 			</div>
 		  </td>
-		  <td><input type="number" value="1"></td>
+		  <td><input type="number" value="1" min="0"></td>
 		  <td>₹75</td>
 	   </tr>
 	   <tr>
 	      <td>
 		    <div class="cart-info">
-			  <img src="images/category-3.jpg">
+			  <img src="category-3.jpg">
 			  <div>
 			    <p>PUF Panels</p>
 				<small>Price: ₹175 / Square feet</small>
@@ -83,23 +84,68 @@
 			  </div>
 			</div>
 		  </td>
-		  <td><input type="number" value="1"></td>
+		  <td><input type="number" value="1" min="0"></td>
 		  <td>₹175</td>
+	   </tr>
+	   <tr>
+	      <td>
+		    <div class="cart-info">
+			  <img src="category-4.jpg">
+			  <div>
+			    <p>Coldrooms</p>
+				<small>Price: ₹2L / Unit</small>
+				<br>
+				<a href="">Remove</a>
+			  </div>
+			</div>
+		  </td>
+		  <td><input type="number" value="1" min="0"></td>
+		  <td>₹2,00,000</td>
+	   </tr>
+	   <tr>
+	      <td>
+		    <div class="cart-info">
+			  <img src="category-5.jpg">
+			  <div>
+			    <p>PUF Pipe Section</p>
+				<small>Price: ₹90 / Square feet</small>
+				<br>
+				<a href="">Remove</a>
+			  </div>
+			</div>
+		  </td>
+		  <td><input type="number" value="1" min="0"></td>
+		  <td>₹90</td>
+	   </tr>
+	   <tr>
+	      <td>
+		    <div class="cart-info">
+			  <img src="category-6.jpg">
+			  <div>
+			    <p>Reefer Trucks</p>
+				<small>Price: ₹8.5L / Truck</small>
+				<br>
+				<a href="" >Remove</a>
+			  </div>
+			</div>
+		  </td>
+		  <td><input type="number" value="1" min="0"></td>
+		  <td>₹8,50,000</td>
 	   </tr>
 	   </table>
 	   <div class="total-price">
 	      <table>
 		  <tr>
 		     <td>Subtotal</td>
-			 <td>₹425.00</td>
+			 <td>₹10,50,515.00</td>
 		  </tr>
 		  <tr>
 		     <td>Tax</td>
-			 <td>₹100.00</td>
+			 <td>₹1500.00</td>
 		  </tr>
 		  <tr>
 		     <td>Total</td>
-			 <td>₹525.00</td>
+			 <td>₹10,52,015.00</td>
 		  </tr>
 		  </table>
 	   
@@ -110,13 +156,12 @@
 	   
 	   
 	</div>
-	<!-------------footer---->
-	
+		
 	<div class="footer">
 	   <div class="container">
 	      <div class="row">
 		         <div class="footer-col-2">
-			     <img src="images/logo-lite.png">
+			     <img src="logo-lite.png">
 				 
 				 <p>Copyright © 2021 HICON</p>
 			   </div>
@@ -124,33 +169,32 @@
 			     <h3>Download the App</h3>
 				 <p>Download App for Android and ios mobile phone.</p>
 				 <div class="app-logo">
-				    <img src="images/play-store.png">
-					<img src="images/app-store.png">
-				 
+				    <a href="app.html"><img src="play-store.png"></a>
+					<a href="app.html"><img src="app-store.png"></a>
 				 </div>
 			   </div>
 			   
 			   <div class="footer-col-3">
 			     <h3>Useful Links</h3>
 				 <ul>
-				     <li>Coupons</li>
-					 <li>Return Policy</li>
-					 <li>Learning center</li>
+				     <a href="coupon.html"><li>Coupons</li></a>
+					 <a href="return.html"><li>Return Policy</li></a>
+					 <a href="learn.html"><li>Learning center</li></a>
 				</ul>
 			   </div>
 			   <div class="footer-col-4">
 			     <h3>Follow Us</h3>
 				 <ul>
-				     <li>Twitter</li>
-					 <li>Facebook</li>
-					 <li>Instagram</li>
+				     <a href="twitter.html"><li>Twitter</li></a>
+					 <a href="facebook.html"><li>Facebook</li></a>
+					 <a href="instagram.html"><li>Instagram</li></a>
+				</ul>
 				</ul>
 			   </div>
 		  </div>
 		</div>
 	</div>	
 	
-	<!-----------------js---->
 	<script>
 	 var MenuItems = document.getElementById("MenuItems");
 	 
